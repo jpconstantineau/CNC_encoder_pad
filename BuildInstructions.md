@@ -8,12 +8,12 @@
 - [ ] 1 PCB
 - [ ] 1 Top Plate
 - [ ] 1 Bottom Plate
-- [ ] 1 Manual Pulse Generator (Type VGW6-5E100S)
+- [ ] 1 Manual Pulse Generator (Type VGW6-5E100S or ZSS600-001-100B-5E)
 - [ ] 1 BlueMicro840 (nice!nano, nrfmicro would also work)
 - [ ] 1 LiPo Battery (3030335)
 - [ ] 1 foam battery protector
 - [ ] 2 12 Pin Low Profile Sockets (millmax...)
-- [ ] 1 0.5mm wire or millmax pins
+- [ ] 1 0.5mm wire for millmax pins (use diode legs)
 - [ ] 4 dupont connection wires with female connector at 1 end
 - [ ] 1 90 degree 4 pin header
 - [ ] 1 surface mount power switch
@@ -37,8 +37,9 @@
 - [ ] desoldering pump and/or desoldering braid
 - [ ] multimeter
 - [ ] painter's tape
+- [ ] pvc tape (electrical tape)
 - [ ] thread locker: nail polish or loctite
-- [ ] screwdriver
+- [ ] screwdrivers (For m2 screws and encoder terminals)
 - [ ] side cutters
 - [ ] pliers
 - [ ] tweezers
@@ -55,7 +56,7 @@ Review the lists above, compare your components with the following picture.
 
 ### Build Step 1: Install the diodes
 
-Diodes can be installed on either sides of the PCB. For future ease of access, install diodes on **bottom side** of the board.
+Diodes can be installed on either sides of the PCB. For future ease of access, install diodes on **bottom side** of the board. Pictures show them instaleld on the top side.
 
 Use a straight edge to bend the diodes prior to installing them on the board.
 
@@ -65,7 +66,7 @@ Use a straight edge to bend the diodes prior to installing them on the board.
 
 Black line on the diode lines up with the square pad and thicker line on the PCB silkscreen, bend the legs and push it through.
 
-![diodes](images/diodes.JPG)
+![diodes](images/diode_band.jpg)
 
 Bands must match the bands on the silkscreen and the square pads.
 
@@ -73,11 +74,11 @@ After inserting both legs into the PCB, bend the legs outward to keep the diodes
 
 Top view:
 
-![diodes left half top view](images/diodes_ready_left_top.JPG) 
+![diodes top view](images/diode_top.jpg) 
 
 Bottom view:
 
-![diodes left half bottom view](images/diodes_ready_left_bottom.JPG)
+![diodes bottom view](images/diode_legs_bottom.jpg)
 
 
 Once all of the diodes are in place they are ready to be soldered. After soldering, clip the legs on the diodes flush with the PCB.  
@@ -86,16 +87,41 @@ Diodes soldered.
 
 Top view:
 
-![diodes left half top view](images/diodes_soldered_left_top.JPG)
+![diodes left half top view](images/diode_top_soldered.jpg)
 
 Bottom view:
 
-![diodes left half bottom view](images/diodes_soldered_left_bottom.JPG)
+![diodes left half bottom view](images/diode_trimmed.jpg)
 
 ### Build Step 2: Install the resistors
 
+Resistors can be installed on either sides of the PCB. For future ease of access, install resistors on **bottom side** of the board.  Pictures show them instaleld on the top side.
+
+After inserting both legs into the PCB, bend the legs outward to keep the resistors in place when soldering.
+
+Top view:
+
+![diodes top view](images/resistor_top.jpg) 
+
+Bottom view:
+
+![diodes bottom view](images/resistor_legs_bottom.jpg)
+
+
+Once all of the diodes are in place they are ready to be soldered. After soldering, clip the legs on the diodes flush with the PCB. 
+
+Resistors soldered.
+
+Top view:
+
+![diodes left half top view](images/resistor_top_soldered.jpg)
+
+Bottom view:
+
+![diodes left half bottom view](images/resistor_bottom_trimmed.jpg)
+
 ### Step 3:  Install  Sockets 
-Install Pro Micro Sockets on the bottom side of the boards. DO NOT SOLDER THE PRO MICRO.
+Install Sockets on the bottom side of the boards. ** DO NOT SOLDER THE BLUEMICRO840 **.
 
 Place the sockets on the boards and use some tape to hold them in place.  
 
