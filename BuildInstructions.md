@@ -183,8 +183,6 @@ Let the solder solidify and solder the other legs.
 
 BlueMicro840 Orientation - it is important to orient the controller in the correct direction.  NOTE: The PCB has an indication of the **RAW** pin.  Match this pin with the silscreen of the BlueMicro840.
 
-![Controller orientation](images/pro_micro_orientation.JPG)
-
 
 ### Steps for completing BlueMicro840 installation using sockets
 
