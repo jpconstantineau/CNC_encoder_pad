@@ -124,19 +124,32 @@ Bottom view:
 Install Sockets on the bottom side of the boards. ** DO NOT SOLDER THE BLUEMICRO840 **.
 
 Place the sockets on the boards and use some tape to hold them in place.  
-
-![tape sockets in place](images/tape_sockets.JPG)
+![tape sockets in place](images/socket_unsoldered.jpg)
+![tape sockets in place](images/socket_taped.jpg)
 
 Once in place, solder a single pin and then remove the tape.  While holding the PCB, press down on the socket with your finger and reflow the soldered pin with the iron.  Properly align the socket, remove the iron, and allow the socket to solidify.  Do not place your finger over the pin that is soldered.  It gets hot.
 
-![tack socket in place](images/tack_socket.JPG)
+![tack socket in place](images/socket_taped_1.jpg)
 
 After you are satisfied with the alignment of the sockets, solder the pin on the opposite side of each socket to hold it in place. Solder the remaining pins.
 
-![solder sockets](images/solder_sockets.JPG)
+![solder sockets](images/socket_soldered.jpg)
 
 ### Build Step 4: 90 degree header
 
+The 4 pin angled header is used to connect the rotary encoder with the controller.  
+
+![solder sockets](images/4pin_header_original.jpg)
+Because of the limited spacing between the PCB and Bottom Plates, you need to make the header shorter.  You do so by squeezing the black plastic retaining clip to be flush with the angle.  This reduces the total height once installed.
+![solder sockets](images/4pin_header_pushed.jpg)
+
+Install and hold the header using tape, then solder.  It's OK  if the header slopes slightly (see pictures).
+![solder sockets](images/4pin_header_taped.jpg)
+![solder sockets](images/4pin_header_before_soldering.jpg)
+Once soldered, trim the pinss from  the other side using side-cutters.
+![solder sockets](images/4pin_header_trimed.jpg)
+
+![solder sockets](images/4pin_header_installed.jpg)
 
 
 ### Step 5: Install Reset Switch
@@ -157,55 +170,141 @@ Let the solder solidify and solder the other legs.
 
 ### Step 6: Install Power Switch
 
+![solder reset switch](images/power_switch_position.jpg)
+![solder reset switch](images/power_switch_one_pad.jpg)
+![solder reset switch](images/power_switch_soldered.jpg)
+
 ### Step 7: Install Speaker
+
+![solder reset switch](images/speaker_installed.jpg)
+
 
 ### Step 8: Install Bluemicro840
 
-Pro Micro Orientation - it is important to orient the controllers in the correct direction.  The Pro Micro on the left side of the keyboard will have the components facing toward the bottom plate. The Pro Micro on the right side of the keyboard will have the components facing the PCB. NOTE: The PCB has an indication of the **RAW** pin.  Match this pin with the silscreen of the Pro Micro.
+BlueMicro840 Orientation - it is important to orient the controller in the correct direction.  NOTE: The PCB has an indication of the **RAW** pin.  Match this pin with the silscreen of the BlueMicro840.
 
-![pro micro orientation](images/pro_micro_orientation.JPG)
+![Controller orientation](images/pro_micro_orientation.JPG)
 
-In the photo above, the left side of the keyboard is on top and the right side of the keyboard is on the bottom.
 
-### Steps for completing Pro Micro installation using sockets
+### Steps for completing BlueMicro840 installation using sockets
 
 Tape over the sockets using painter's tape so that the Pro Micro does not get soldered directly to the sockets. Press firmly on the tape in order to see the outline of the sockets.
 
-![tape over sockets](images/tape_over_sockets.JPG)
+![tape over sockets](images/socket_taped_pierced.jpg)
 
-Use the diode legs that were saved from the previous steps.  Insert a couple of the pins in order to line everything up and then place the Pro Micros on top of the sockets. Make sure to face one up and the other down.  **Do not face the Pro Micros in the same direction** Insert pins into the remaining holes.
+Use the diode legs that were saved from the previous steps.  Insert a couple of the pins in order to line everything up and then place the BlueMicrroo on top of the sockets. Make sure to face one up and the other down.  Insert pins into the remaining holes.
 
-![pin pro micro facing up](images/insert_pins_components_up.JPG)
+![bluemicro facing down](images/socketing_part1.jpg)
 
-![pin pro micro facing down](images/insert_pins_components_down.JPG)
+![bluemicro facing down](images/socketing_part2.jpg)
 
-Once the pins are in place, solder the Pro Micros. After soldering, use flush cutters to trim the excess wire. Use a small flathead screwdriver to pry the Pro Micros out of the sockets in order to remove the tape.
+Note that you need to connect the RAW pin to the VBatt pad.  Simply cut the wire long and bend it over and solder it to form a bridge.
 
-![pro micros removed from pcbs](images/pro_micros_ready.JPG)
+![bluemicro facing down](images/socketing_part3.jpg)
+
+![bluemicro facing down](images/socketing_part4.jpg)
+
+Once the pins are in place, solder the BlueMicro. After soldering, use flush cutters to trim the excess wire.
+
+![bluemicro facing down](images/socketing_part5.jpg)
+
+ Use a small flathead screwdriver to pry the BlueMicro out of the sockets in order to remove the tape.
+
+![bluemicro facing down](images/socketing_part6.jpg)
+
+![bluemicro removed from pcbs](images/socketing_part7.jpg)
 
 ### Test PCB/BlueMicro840
+
+At this stage, you can test the PCB to make sure it works fine. Mount the BlueMicro and flash a simple firmware to test the switch connections.  Yo won't  be able to test everything but it's easier to flip the diodes now than after you solder all the switches.
 
 ## Prepare Top Plate
 
 ### Build Step 1: Install Standoffs
 
+Select the top plate.  Inspect carefully both sides of the plate for imperfections (put them inside to hid them).
 
+You can now install the standoffs on the top plate.  The longest ones go at the back and the shorter ones at the front.
+
+![Install standoffs](images/standoffs_top.jpg)
+![Install standoffs](images/standoffs_bottom.jpg)
+![Install standoffs](images/standoffs_side.jpg)
+![Install standoffs](images/standoffs_side_top.jpg)
 
 ## Install Switches
 
-Select the top plate for the side you are building.  Inspect carefully both sides of the plate for imperfections (put them inside to hid them) or, in the case of the acrylic plates, for which side is engraved for the stabilizer wire.  
+Install the Rotary Encoder with the notch on the front face facing up (away from you). Note that you only need the rotary encoder and top plate. The nuts will be hidden between the top plate and PCB.  You therefore need to complete mechanical installation of the encoder before installing any switches.
 
-Place the Top plate above the PCB and install switches at each corner to hold everything in place.  Solder the four switches in while pressing down on the PCB to push the PCB and switches together.
+![install encoder](images/encoder_installation2.jpg)
 
-![solder corner switches](images/solder_corner_switches.JPG)
+ Using some thread locker (I use transparent nail varnish), put some thread locker on the thread before screwing the nut that would squeeze the top plate.  Note that you need to screw them relatively tight so that they dont loosen over time. This is quite important as you won't have access to these nuts once the macropad is assembled. 
 
-Once the corner switches are installed, install the remaining switches and solder them in place.
+ ![install encoder](images/encoder_installation1.jpg)
 
-![solder all switches in place](images/solder_switches.JPG)
+![solder corner switches](images/switch_installation1.jpg)
+
+Install switches at each corner to hold everything in place. Push everything through the PCB and install the remaining switches. Make sure to press down on the PCB to push the PCB and switches together.  Verify that the 2 pins for each switch is coming out below the PCB so that it can be soldered.
+
+![solder corner switches](images/switch_installation2.jpg)
+
+Once the corner switches are installed, install the remaining switches and solder them in place.  Solder the four corner switches in while checking for them to remain close to the PCB. Finish with the remaining ones.  
+
 
 ---
-## Test and Flash Pro Micros
+## Install LEDs
 
-It's easier to replace a faulty Pro Micro if it's not already installed.
+![solder corner switches](images/led_installation1.jpg)
+Note that the longer LED leg is lined-up with the + pin.
 
----
+![solder corner switches](images/led_installation2.jpg)
+![solder corner switches](images/led_installation3.jpg)
+
+Make sure that all the LEDs are installed flush wwith the switches.  Any gaps between the LED and switch may interfere with keycaps.
+
+![solder corner switches](images/led_switch_installed.jpg)
+
+## Connect Rotary Encoder using Dupont wires
+
+Using the Dupont wires, you can use one end with the connector to the 4-pin header.  The wires will be stripped on the other end to expose the wire and they will be screwed in the block terminal at the back of the rotary encoder.  Note that both the PCB and Encoder have *A B 0V and Vcc* labelled. 
+
+## Install the battery
+
+Solder the batteryy wires as follows:
+
+* Red wire to square pad (+)
+* Black wire to round pad (-)
+  
+Cut a small piece of foam to put the battery on:
+
+Once installed, you should have something that look similar to this:
+
+![solder corner switches](images/battetry_connections.jpg)
+
+To make sure that the battery isn't connected in reverse, measure the voltage between RAW and GND on the socket of the BlueMicro.  When the power switch is "ON", you should see somewhere between 3 and 4.2V  (depends on battery level).
+
+Note that I usually install a small foam pad between the battery and the PCB itself.  This cushions the battery against the pins poking holes into the battery (not something good).
+
+
+## Install BlueMicro
+Before installing the bluemicro, you should install plastic tape between the sockets to prevent the metall can of the BlueMicro to touch the switch or LED contacts.
+
+![solder corner switches](images/pvc_tape.jpg)
+
+At this point, you can push the BlueMicro back into its socket.
+
+## Verification
+
+The various wires and components should now be installed similarly to the following picture:
+
+![solder corner switches](images/final_assembly.jpg)
+
+You can now flash a firmware to your encoder and test it out.  The default firmware will flash each LED, make some sounds and have a simple keymap to test basic functionality.
+
+## Final assembly 
+
+Line-up evevrything so that the battery doesn't get crushed or protrude on the edges.
+
+Put the bottom plate on and screws the final screws.
+
+![solder corner switches](images/bottom_assembly.jpg)
+Once all assembled, yoou caan install the small rubber pads to pprevent slipping ona desk. 
